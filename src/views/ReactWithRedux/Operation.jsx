@@ -11,7 +11,7 @@ class Operation extends React.Component {
     console.log(props);
   }
   render() {
-    const { counter, increment, decrement } = this.props;
+    const { counter, increment, decrement ,async} = this.props;
     return (
       <div>
         <h1>Operation组件</h1>
@@ -35,6 +35,9 @@ class Operation extends React.Component {
             <li>bindActionCreators绑定所有的actions</li>
             <li>combineReducers将所有的reducer统一绑定，然后再统一注册</li>
           </ul>
+          <Button type="primary" danger onClick={() => async(5)}>
+            Async
+          </Button>
         </div>
       </div>
     );

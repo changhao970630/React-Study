@@ -10,3 +10,13 @@ export function decrement(num) {
     num,
   };
 }
+export function async(num) {
+  return dispatch=>{
+    setTimeout(()=>{
+      dispatch({
+        type: "ASYNC",
+        num,
+      })
+    },1000)
+  }
+}

@@ -4,8 +4,8 @@ import "./index.css";
 // import App from "./views/CompDataProps/App"; //组件传值
 // import App from "./views/ReduxTestApp/App"; //React状态管理单独的js状态管理
 // import App from "./views/ReactWithRedux/App.jsx";
-import App from "./views/ReactRouter/App";
-
+// import App from "./views/ReactRouter/App";
+import App from "./views/ReduxAsyncHttp/App"
 import * as serviceWorker from "./serviceWorker";
 
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'

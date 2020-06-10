@@ -1,11 +1,12 @@
 import React from "react";
 import Operation from "./Operation";
-import { Provider } from "react-redux";
-import { createStore } from "redux";
+import { Provider, } from "react-redux";
+import thunk  from "redux-thunk";
+import { createStore,applyMiddleware } from "redux";
 import { Button } from "antd";
 // import counter from "./Reducer/counter";
 import rootReducer from "./Reducer/index";
-let store = createStore(rootReducer);
+let store = createStore(rootReducer,{},applyMiddleware(thunk));
 export default class App extends React.Component {
   constructor() {
     super();
