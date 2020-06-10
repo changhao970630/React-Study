@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from 'react-redux'
-import {publicEssay} from "./actions/essay"
+import {publicEssayAction} from "./actions/essay"
 import {Button} from 'antd'
 
 const Essay = (props) => {
@@ -34,7 +34,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         publicEssay: () => {
-            dispatch(publicEssay())
+            dispatch(publicEssayAction())
         }
     }
 }
